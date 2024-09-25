@@ -1,0 +1,129 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font faces */
+@font-face {
+  font-family: 'Atkinson';
+  src: url('atkinson.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Atkinson';
+  src: url('atkinson-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Body styles */
+body {
+  font-family: 'Atkinson', sans-serif;
+  font-size: 10pt; /* Use points for more accurate sizing */
+  background-color: #f0f0f0; /* Light gray background to show page boundaries */
+}
+
+/* Page container */
+.page-container {
+  width: 8.5in;
+  height: 11in;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Content area */
+.content {
+  width: 100%; /* Full width of page-container */
+  height: 100%; /* Full height of page-container */
+  padding: 0.5in;
+  display: flex;
+}
+
+/* Column styles */
+.left-column {
+  width: 1.75in;
+  padding-right: .125in;
+}
+
+.right-column {
+  flex-grow: 1;
+  padding-left: .125in;
+}
+
+.skills {
+  list-style-type: none;
+}
+
+.skills-2-col {
+  list-style-type: none;
+  column-count: 2;
+}
+
+ul {
+  text-align: justify;
+}
+
+.job {
+  margin-bottom: 0.125in;
+}
+
+.job-header {
+  margin-bottom: 0.0625in;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.job-header-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.job-header-company {
+  font-weight: bold;
+  float:left;
+}
+
+.job-header-date {
+  float: right;
+}
+
+.job-header-title {
+  float: left;
+}
+
+.job-header-note {
+  float: right;
+}
+
+/* Print styles */
+@media print {
+  @page {
+      size: letter;
+      margin: 0;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+  }
+
+  .page-container {
+      width: 8.5in;
+      height: 11in;
+      margin: 0;
+      box-shadow: none;
+      page-break-after: always;
+  }
+
+  .content {
+      width: 100%;
+      height: 100%;
+      padding: 0.5in;
+  }
+}
