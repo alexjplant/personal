@@ -54,10 +54,26 @@ body {
   padding-left: .125in;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .name {
   font-size: 48pt;
   font-weight: bold;
   line-height: 44pt;
+}
+
+.byline {
+  font-size: 9.5pt;
+  font-weight: bold;
+  text-align: justify;
 }
 
 .header-block {
