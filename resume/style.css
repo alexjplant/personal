@@ -22,7 +22,7 @@
 /* Body styles */
 body {
   font-family: 'Atkinson', sans-serif;
-  font-size: 10pt; /* Use points for more accurate sizing */
+  font-size: 9.5pt; /* Use points for more accurate sizing */
   background-color: #f0f0f0; /* Light gray background to show page boundaries */
 }
 
@@ -54,6 +54,25 @@ body {
   padding-left: .125in;
 }
 
+.name {
+  font-size: 48pt;
+  font-weight: bold;
+  line-height: 44pt;
+}
+
+.header-block {
+  margin-bottom: .125in;
+}
+
+.skills-title {
+  font-weight: bold;
+  margin-bottom: .03125in;
+}
+
+.skills-block {
+  margin-bottom: .125in;
+}
+
 .skills {
   list-style-type: none;
 }
@@ -67,14 +86,17 @@ ul {
   text-align: justify;
 }
 
+.dir-block {
+  border: 1px solid black;
+}
+
 .job {
   margin-bottom: 0.125in;
 }
 
 .job-header {
-  margin-bottom: 0.0625in;
   border-bottom: 1px solid black;
-  border-left: 1px solid black;
+  margin-bottom: .03125in;
 }
 
 .job-header-row::after {
@@ -85,7 +107,7 @@ ul {
 
 .job-header-company {
   font-weight: bold;
-  float:left;
+  float: left;
 }
 
 .job-header-date {
